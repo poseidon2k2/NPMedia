@@ -1,0 +1,601 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NPM</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="./font/icofont/icofont.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <header>
+      <section id="top-bar">
+        <div class="container">
+          <div class="top-bar">
+            <div class="left_top-bar">
+              <span>IF YOU CAN THINK IT, WE CAN CREATE IT</span>
+            </div>
+            <div class="right_top-bar">
+              <a href="#"><span class="icon-facebook"><i class="icofont-facebook"></i></span></a>
+              <a href="#"><span class="icon-youtube"><i class="icofont-youtube-play"></i></span></a>
+              <a href="#"><span class="icon-instagram"><i class="icofont-instagram"></i></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header-main" id="header-main">
+        <div class="container">
+          <div class="row header-pc">
+            <div class="col-xl-2 col-md-3 col-3 col">
+              <a href="index.html"><img src="img/new-plus-media-logo.png" class="logo"></a>
+            </div>
+            <div class="col-xl-10 col-md-9 col-9 col">
+              <div class="main-menu">
+                <ul id="menu-main-menu" class="main-menu mega-menu">
+                  <li class="menu-item active"><a href="./index.html" class=" current"><i class="icofont-home"></i>Trang chủ</a></li>
+                  <li class="menu-item"><a href="./page/gioithieu.html"><i class="icofont-file-document"></i> Giới thiệu</a></li>
+                  <li class="menu-item"><a href="./page/dichvu.html"><i class="icofont-listine-dots"></i> Dịch vụ</a></li>
+                  <li class="menu-item"><a href="./page/sukien.html"><i class="icofont-newspaper"></i> Sự kiện</a></li>
+                  <li class="menu-item"><a href="./page/lienhe.html"><i class="icofont-phone"></i> Liên hệ</a></li>
+                </ul>
+                <button class="btn-search" onclick="displayFunction()"><i class="icofont-search-2"></i></button>
+                <form action="#" method="get" class="searchform" id="searchform">
+                  <div class="searchform-fields">
+                    <span class="text"><input name="s" type="text" value="" placeholder="Tìm kiếm…" autocomplete="off"></span>
+                      <span class="button-wrap">
+                        <button class="btn btn-special" title="Tìm kiếm" type="submit"><i class="icofont-search-2"></i></button>
+                      </span>
+                  </div>
+                  <div class="live-search-list">
+                    <div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999;"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="header-not-pc">
+            <div class="logo-respon">
+              <img src="img/new-plus-media-logo.png" class="logo">
+            </div>
+            <div class="menu-respon">
+              <button class="btn-menu" onclick="displayMenu()"><i class="icofont-navigation-menu"></i></button>
+              <span class="divide"></span>
+              <button class="btn-search" onclick="displayFunction()"><i class="icofont-search-2"></i></button>
+              <form action="#" method="get" class="searchform" id="searchform">
+                  <div class="searchform-fields">
+                    <span class="text"><input name="s" type="text" value="" placeholder="Tìm kiếm…" autocomplete="off"></span>
+                      <span class="button-wrap">
+                        <button class="btn btn-special" title="Tìm kiếm" type="submit"><i class="icofont-search-2"></i></button>
+                      </span>
+                  </div>
+                  <div class="live-search-list">
+                    <div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999;"></div>
+                  </div>
+                </form>
+            </div>
+          </div>
+          <div id="nav-panel">
+                <div class="container">
+                  <div class="mobile-nav-wrap">
+                    <div class="menu-wrap">
+                      <ul class="mobile-menu">
+                        <li class="menu-item-mobile active-mobile"><a href="./index.html" class=" current"><i class="icofont-home"></i>Trang chủ</a></li>
+                        <li class="menu-item-mobile"><a href="./page/gioithieu.html"><i class="icofont-file-document"></i> Giới thiệu</a></li>
+                        <li class="menu-item-mobile"><a href="./page/dichvu.html"><i class="icofont-listine-dots"></i> Dịch vụ</a></li>
+                        <li class="menu-item-mobile"><a href="./page/sukien.html"><i class="icofont-newspaper"></i> Sự kiện</a></li>
+                        <li class="menu-item-mobile"><a href="./page/lienhe.html"><i class="icofont-phone"></i> Liên hệ</a></li>
+                      </ul>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+    </header>
+    <main>
+      <section class="slide-show">
+        <div class="slideshow-container">
+        <div class="mySlides fade">
+            <img src="img/slide-1.jpeg" style="width:100%">
+        </div>
+        <div class="mySlides fade">
+            <img src="img/slide-2.jpeg" style="width:100%">
+        </div>
+        <a class="prev" onclick="plusSlides(-1)">❮</a>
+        <a class="next" onclick="plusSlides(1)">❯</a>
+        <div style="text-align:center" class="list-dots">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+        </div>
+      </div>
+      </section>
+      <section class="main-content">
+        <div class="container">
+          <p style="text-align: center;" class="text-intro wow fadeInUp">
+            New Plus Media (NP Media) công ty tư vấn giải pháp marketing, thiết kế Website, phát triển App, xây dựng thương hiệu, tư vấn chiến lược, sáng tạo nội dung, SEO và Digital Marketing…<br>
+            Điểm khác biệt chính yếu NP Media là muốn trao tặng cho khách hàng giải pháp truyền thông sale hiệu quả, tiết kiệm, tiếp cận trực tiếp đến đối tượng KH mục tiêu và khả năng xử lí lập tức của đội ngũ chuyên gia hơn 10 năm kinh nghiệm.
+          </p>
+          <div class="row wow fadeInLeft" style="animation-delay: 0.5s;">
+            <div class="col-xl-3 col-md-3 col-12 col porto-box">
+              <div class="porto-sicon-img">
+                <img src="img/icon-01.png" class="img-icon">
+              </div>
+              <div class="porto-sicon-header"><h3 class="porto-sicon-title" style="">GIẢI PHÁP HIỆU QUẢ</h3></div>
+              <div class="porto-sicon-description black-color">NP Media hổ trợ giải quyết các vấn đề mà bạn đang gặp phải, từ đó đưa ra giải pháp giúp khách hàng tăng trưởng lợi nhuận bền vững.</div>
+            </div>
+            <div class="col-xl-3 col-md-3 col-12 col porto-box">
+              <div class="porto-sicon-img">
+                <img src="img/icon-04.png" class="img-icon">
+              </div>
+              <div class="porto-sicon-header"><h3 class="porto-sicon-title" style="">TẬN TÂM CHĂM SÓC</h3></div>
+              <div class="porto-sicon-description black-color">Bên cạnh bảo hành toàn diện, vĩnh viễn các dịch vụ thiết kế, NP Media còn hỗ trợ khách hàng tự mình vận hành hệ thống Digital Marketing.</div>
+            </div>
+            <div class="col-xl-3 col-md-3 col-12 col porto-box">
+              <div class="porto-sicon-img">
+                <img src="img/icon-03.png" class="img-icon">
+              </div>
+              <div class="porto-sicon-header"><h3 class="porto-sicon-title" style="">ĐỘI NGŨ NHÂN SỰ</h3></div>
+              <div class="porto-sicon-description black-color">Nhân sự NP Media vốn là tập hợp những cá thể bước ra từ những giảng viên, chuyên gia uy tín & tận tâm trong ngành Digital Marketing.</div>
+            </div>
+            <div class="col-xl-3 col-md-3 col-12 col porto-box">
+              <div class="porto-sicon-img">
+                <img src="img/icon-02.png" class="img-icon">
+              </div>
+              <div class="porto-sicon-header"><h3 class="porto-sicon-title" style="">SỰ THÀNH CÔNG</h3></div>
+              <div class="porto-sicon-description black-color">Sự lựa chọn đối tác chuyên nghiệp hôm nay của bạn chính là sự thành công rực rỡ cho thương hiệu bạn trong tương lai.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service-procesing wow fadeInUp" style="animation-delay: 0.5s;">
+        <div class="container">
+          <div class="title-section">
+            <h2 class="vc_custom_heading">TRIỂN KHAI DỊCH VỤ</h2>
+            <p class="vc_custom_content">NP Media rất am hiểu về Digital Marketing đặc biệt là mạng xã hội, chúng tôi đưa dịch vụ/sản phẩm của bạn tiếp cận đến khách hàng tiềm năng một cách hiệu quả nhất.</p>
+          </div>
+          <div class="slick-slide-services">
+            <div class="image-slider">
+              <div class="image-item">
+                <div class="image">
+                  <img src="./img/icon-design.png" alt="" class="img-click"/>
+                </div>
+                <h3 class="porto-sicon-title" style="">Dịch vụ 1</h3>
+                <div class="porto-sicon-description" style="">Sự lựa chọn đối tác chuyên nghiệp hôm nay của bạn chính là sự thành công rực rỡ cho thương hiệu bạn trong tương lai.</div>
+              </div>
+              <div class="image-item">
+                <div class="image">
+                  <img
+                    src="./img/icon-app.png"
+                    alt=""
+                  class="img-click"/>
+                </div>
+                <h3 class="porto-sicon-title" style="">Dịch vụ 2</h3>
+                <div class="porto-sicon-description" style="">Sự lựa chọn đối tác chuyên nghiệp hôm nay của bạn chính là sự thành công rực rỡ cho thương hiệu bạn trong tương lai.</div>
+              </div>
+              <div class="image-item">
+                <div class="image">
+                  <img
+                    src="./img/icon-video-marketing.png"
+                    alt=""
+                  class="img-click"/>
+                </div>
+                <h3 class="porto-sicon-title" style="">Dịch vụ 3</h3>
+                <div class="porto-sicon-description" style="">Sự lựa chọn đối tác chuyên nghiệp hôm nay của bạn chính là sự thành công rực rỡ cho thương hiệu bạn trong tương lai.</div>
+              </div>
+              <div class="image-item">
+                <div class="image">
+                  <img
+                    src="./img/icon-adv.png"
+                    alt=""
+                  class="img-click"/>
+                </div>
+                <h3 class="porto-sicon-title" style="">Dịch vụ 4</h3>
+                <div class="porto-sicon-description" style="">Sự lựa chọn đối tác chuyên nghiệp hôm nay của bạn chính là sự thành công rực rỡ cho thương hiệu bạn trong tương lai.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="section-intro-marketing wow fadeIn" style="animation-delay: 0.5s;">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-7 col-md-6 col-12 col items">
+              <h2 class="intro-marketing">Dịch vụ phòng Marketing thuê ngoài.</h2>
+              <div class="wpb_wrapper">
+                <p>Giúp tăng 200% lượng KH tiềm năng nhờ dịch vụ Marketing thuê ngoài chuyên nghiệp với tiêu chính ĐÚNG – ĐỦ &amp; ĐỀU</p>
+              </div>
+              <a class="btn-see-more" href="#" title="">Tìm hiểu thêm</a>
+            </div>
+            <div class="col-xl-5 col-md-6 col-12 col items">
+              <img src="img/marketing-innovation-e1541810246205.jpeg" class="intro-marketing__img">
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="service-support wow fadeIn" style="animation-delay: 0.5s;">
+        <div class="container">
+          <h2 class="vc_custom_heading">NP Media đồng hành &amp; hổ trợ cùng bạn</h2>
+          <div class="vc_custom_content">
+            <p>Đến với NP bạn sẽ có kết quả kinh doanh như mong muốn với đội ngũ Marketing dày dặn kinh nghiệm, chuyên môn cao mà không tốn thời gian tuyển dụng, đào tạo &amp; Quản lý.</p>
+          </div>
+          <div class="row row-infor">
+            <div class="col-xl-4 col-md-12 col-12 col">
+              <div class="porto-sicon-img">
+                <img class="img-icon" alt="" src="img/building-2-line.png">
+              </div>
+              <h3 class="porto-sicon-title" style="">Tăng 3X khách hàng tiềm năng</h3>
+              <div class="porto-sicon-description" style="">NP Media sẽ tư vấn chiến lược ĐỘC ĐÁO giúp tăng 3X khách hàng với đội ngũ chuyên gia Marketing hơn 10 năm kinh nghiệm</div>
+            </div>
+            <div class="col-xl-4 col-md-12 col-12 col">
+              <div class="porto-sicon-img">
+                <img class="img-icon" alt="" src="img/team-line.png">
+              </div>
+              <h3 class="porto-sicon-title" style="">Hiệu quả & Tiết kiệm chi phí</h3>
+              <div class="porto-sicon-description" style="">Với chi phí tương đương lương 1-2 nhân sự, giúp bạn tiết kiệm chi phí và giúp bạntập trung vào khâu sản xuất tăng lợi nhuận</div>
+            </div>
+            <div class="col-xl-4 col-md-12 col-12 col">
+              <div class="porto-sicon-img">
+                <img class="img-icon" alt="" src="img/cup-line.png">
+              </div>
+              <h3 class="porto-sicon-title" style="">Tăng cường độ phủ thương hiệu.</h3>
+              <div class="porto-sicon-description" style="">Triển khai Marketing đa kênh trên Facebook, Google, Zalo…hiệu quả, giúp sản phẩm bạn nổi bật  trên thị trường, tăng gia trị thương hiệu.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="action-contact">
+        <div class="container box-white">
+          <div class="row">
+            <div class="col-xl-6 col-md-12 col-12 col border-right wow bounceInLeft" style="animation-delay: 0.5s;">
+              <div class="row">
+                <div class="col-xl-2 col-md-2 col-2 col">
+                  <i class="icofont-coffee-cup"></i>
+                </div>
+                <div class="col-xl-10 col-md-10 col-10 col">
+                  <h3 class="porto-sicon__title" style="">Trò chuyện với chúng tôi</h3>
+                  <div class="porto-sicon__description" style="">Đừng ngại liên hệ với NP Media&nbsp; để nhận giải pháp kinh doanh tuyệt vời..
+                    <a href="#"><button class="porto-sicon__read background-red"><strong>Trò chuyện</strong></button></a></div>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-6 col-md-12 col-12 col wow bounceInRight" style="animation-delay: 0.5s;">
+              <div class="row">
+                <div class="col-xl-2 col-md-2 col-2 col">
+                  <i class="icofont-headphone-alt"></i>
+                </div>
+                <div class="col-xl-10 col-md-10 col-10 col">
+                  <h3 class="porto-sicon__title" style="">Hotline ?</h3>
+                  <div class="porto-sicon__description" style="">Bắt đầu thành công lớn của bạn </br> bằng cuộc trò chuyện nhỏ ngay hôm nay.
+                    <a href="tel:0911724247"><button class="porto-sicon__read background-green"><strong>0911 724 247</strong></button></a>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="review">
+        <div class="container">
+          <div class="vc_separator vc_text_separator vc_separator_align_center vc_sep_width_100 vc_sep_pos_align_center">
+            <span class="vc_sep_holder vc_sep_holder_l"><span style="background-image: -webkit-linear-gradient(left, transparent, white);
+             background-image: linear-gradient(to right, transparent, white);" class="vc_sep_line"></span></span>
+                  <h3 >CẢM NHẬN KHÁCH HÀNG</h3>  <span class="vc_sep_holder vc_sep_holder_r">
+            <span style="background-image: -webkit-linear-gradient(left, white, transparent);
+             background-image: linear-gradient(to right, white, transparent);" class="vc_sep_line"></span></span>
+          </div>
+          
+          <div class="row">
+            <div class="col-xl-4 col-md-12 col-12 col items">
+              <div class="img-center">
+                <img src="img/luan.jpeg" class="avatar-customer">  
+              </div>
+              <div class="porto-sicon-header"><h3 class="porto-sicon-title" style="">Mr. Richart Luận</h3><p class="porto-sicon-name">Hoàng Linh Group</p></div>
+              <div class="porto-sicon-description none-padding" style="">Bản thân là SEO doanh nghiệp, nên việc cập nhật kiến thức Digital Trade tại New Plus Media giúp tôi hoạch định chiến lược kinh doanh, đánh giá KPI cũng như mơ rộng kênh đầu tư mới và sáng tạo hơn ở thời kinh tế 4.0</div>
+            </div>
+            <div class="col-xl-4 col-md-12 col-12 col items">
+              <div class="img-center">
+                <img src="img/kim-tuyen.jpeg" class="avatar-customer">  
+              </div>
+              <div class="porto-sicon-header"><h3 class="porto-sicon-title" style="">Ms. Kim Tuyến</h3><p class="porto-sicon-name">Ceo kim tuyến academy</p></div>
+              <div class="porto-sicon-description none-padding" style="">Các anh em công ty New Plus Media rất thân thiện và nhiệt tình hổ trợ tôi trong việc truyền thông, marketing thương hiệu Kim Tuyến, việc kinh doanh của tôi đã tốt hơn khá nhiều so với trước đây, trân trọng cám ơn.</div>
+            </div>
+            <div class="col-xl-4 col-md-12 col-12 col items">
+              <div class="img-center">
+                <img src="img/hai.jpeg" class="avatar-customer">  
+              </div>
+              <div class="porto-sicon-header"><h3 class="porto-sicon-title" style="">Mr. Nguyễn Tiến Hảo</h3><p class="porto-sicon-name">Investcoland</p></div>
+              <div class="porto-sicon-description none-padding" style="">Mình thích nhất là là được thầy hỗ trợ mình tốt nếu không hiểu gì có thể liên hệ trực tiếp với thầy, Giờ mình tự tin để chạy quảng cáo mà không phải đi thuê dịch vụ bên ngoài, fanpage mình từ vài trăm like giờ lên hơn 40 nghìn like rồi.</div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="NP-project">
+        <div class="container">
+          <h2 class="vc_custom_heading_abs">Các dự án New Plus Media đã triển khai</h2>
+          <p class="vc_custom_text_abs">Chúng tôi đem đến các dịch vụ phù hợp ngân sách và thời gian của khách hàng.</p>
+          <div class="slick-slide-services">
+            <div class="image-slider-1">
+              <div class="image-item">
+                <div class="image-1">
+                  <img src="./img/Logo-khach-hangnp-media_127.jpeg" alt="" class="img-click"/>
+                </div>
+              </div>
+              <div class="image-item">
+                <div class="image-1">
+                  <img src="./img/Logo-khach-hangnp-media_93.jpeg" alt="" class="img-click"/>
+                </div>
+              </div>
+              <div class="image-item">
+                <div class="image-1">
+                  <img src="./img/Logo-khach-hangnp-media_25.jpeg" alt="" class="img-click"/>
+                </div>
+              </div>
+              <div class="image-item">
+                <div class="image-1">
+                  <img src="./img/Logo-khach-hangnp-media_23.jpeg" alt="" class="img-click"/>
+                </div>
+              </div>
+              <div class="image-item">
+                <div class="image-1">
+                  <img src="./img/Logo-khach-hangnp-media_19.jpeg" alt="" class="img-click"/>
+                </div>
+              </div>
+              <div class="image-item">
+                <div class="image-1">
+                  <img src="./img/Logo-khach-hangnp-media_09.jpeg" alt="" class="img-click"/>
+                </div>
+              </div>
+              <div class="image-item">
+                <div class="image-1">
+                  <img src="./img/Logo-khach-hangnp-media_01.jpeg" alt="" class="img-click"/>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="event">
+        <div class="container">
+          <h3 style="text-align: center;">SỰ KIỆN ĐÃ DIỄN RA</h3>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="form-contact  wow fadeInUp">
+        <div class="container">
+          <h2 class="vc_custom_heading pos-relative">LIÊN HỆ CHÚNG TÔI</h2>
+          <div class="row">
+            <div class="col-xl-3 col-md-12 col-12 col">
+              
+            </div>
+            <div class="col-xl-6 col-md-12 col-12 col">
+              <p class="sub-text">Đừng ngại liên hệ ngay với NP Media hôm nay để nhận giải pháp&nbsp;giúp doanh nghiệp bạn&nbsp;gia tăng lợi nhuận trong thế giới Digital đang bùng nổ mỗi ngày.</p>
+              <form action="#">
+                <input type="text" name="name" placeholder="Tên(*)" required="" class="form-items">
+                <input type="email" name="Email" placeholder="Email(*)" required="" class="form-items">
+                <input type="phone" name="phone" placeholder="Điện thoại(*)" required="" class="form-items">
+                <textarea name="your-message" cols="40" rows="4"  class="form-items" id="contact-message" aria-invalid="false" placeholder="Nội dung"></textarea>
+                <div class="submit-element">
+                  <input type="submit" value="Gửi ngay" class="btn-submit">  
+                </div>
+              </form>
+            </div>
+            <div class="col-xl-3 col-md-12 col-12 col">
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-md-6 col-12 col">
+              <h3 class="widget-title">GIỚI THIỆU</h3>
+              <div class="textwidget"><p>NP Media là công ty cung cấp các giải pháp về công nghệ, thiết kế Website, tư vấn chiến lược marketing,&nbsp;sáng tạo nội dung, SEO và quảng cáo Google, Facebook, Youtube…</p>
+              </div>
+              <div class="share-links">
+                <span><a href=""><i class="icofont-facebook icon-share"></i></a></span>
+                <span><a href=""><i class="icofont-twitter icon-share"></i></a></span>
+                <span><a href=""><i class="icofont-youtube-play icon-share"></i></a></span>
+                <span><a href=""><i class="icofont-instagram icon-share"></i></a></span>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-12 col">
+              <h3 class="widget-title">TIN Mới NHẤT</h3>
+              <div class="post-slide">
+                <div class="post-item-small">
+                  <a href="http://tech3.mypagedemo.com/dmsmax/2021/06/11/4-buoc-de-khac-phuc-tai-khoan-quang-cao-facebook-ads-bi-khoa/">4 bước để khắc phục Tài khoản quảng cáo Facebook Ads bị khóa</a>
+                  <span class="post-date">11/06/2021</span>
+                </div>
+                <div class="post-item-small">
+                  <a href="http://tech3.mypagedemo.com/dmsmax/2021/06/11/lam-nhu-the-nao-de-co-content-quang-cao-facebook-hieu-qua-vi-du-loi-khuyen/">Làm như thế nào để có Content quảng cáo Facebook hiệu quả? Ví dụ &amp; Lời khuyên</a>
+                  <span class="post-date">11/06/2021</span>
+                </div>
+                <div class="post-item-small">
+                  <a href="http://tech3.mypagedemo.com/dmsmax/2021/06/11/su-kien-digital-trade-chien-luoc-digital-marketing-de-ban-hang-thanh-cong/">Sự kiện “Digital Trade-Chiến lược Digital Marketing để bán hàng thành công”</a>
+                  <span class="post-date">11/06/2021</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-12 col">
+              <h3 class="widget-title">DỊCH VỤ NỔI BẬT</h3>
+              <div class="menu-menu-footer-container">
+                <ul id="menu-menu-footer" class="menu">
+                  <li id="menu-item-111" class="menu-item-footer"><a href="http://tech3.mypagedemo.com/dmsmax/quang-cao-mang-xa-hoi/"><i class="icofont-arrow-right"></i>Quảng cáo mạng xã hội</a></li>
+                  <li id="menu-item-112" class="menu-item-footer"><a href="http://tech3.mypagedemo.com/dmsmax/thiet-ke-thuong-hieu/"><i class="icofont-arrow-right"></i>Thiết kế thương hiệu</a></li>
+                  <li id="menu-item-113" class="menu-item-footer"><a href="http://tech3.mypagedemo.com/dmsmax/phat-trien-ung-dung/"><i class="icofont-arrow-right"></i>Phát triển ứng dụng</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-12 col">
+              <h3 class="widget-title">LIÊN HỆ</h3>
+              <div class="textwidget">
+                <ul>
+                  <li><i class="icofont-phone"></i> 0844 15 2020</li>
+                  <li><i class="icofont-phone"></i> Hotline: 0913 898 286</li>
+                  <li><i class="icofont-email"></i><a href="mailto:info@npm.vn"> info@npm.vn</a></li>
+                  <li><i class="icofont-google-map"></i> 165 Trương Định, Phường 9, Quận 3, TP.HCM</li>
+                  <li><i class="icofont-web"></i> <a href="https://npm.vn/"> www.npm.vn</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-bottom">
+        <div class="container">
+          <div class="footer-left">
+            <span class="footer-copyright">© Copyright 2021 by dmsmax. </span>      
+            <span class="designby"><a href="https://www.mypage.vn" onclick="window.open(this.href); return false;">Thiết kế web</a> bởi MyPage</span>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the header
+    var header = document.getElementById("header-main");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+    <script type="text/javascript">
+      const images = document.querySelectorAll(".img-click");
+      images.forEach((el) => el.addEventListener("click", handleChangeImage));
+      function handleChangeImage(e) {
+        const source = e.target.getAttribute("src");
+        const featureImage = document.querySelector(".feature-image");
+        featureImage.setAttribute("src", source);
+      }
+
+      $(document).ready(function () {
+        $(".image-slider").slick({
+          slidesToShow: 3,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: true,
+          draggable: false,
+          prevArrow: `<button type='button' class='slick-prev slick-arrow'><i class="icofont-arrow-left"></i></button>`,
+          nextArrow: `<button type='button' class='slick-next slick-arrow'><i class="icofont-arrow-right"></i></button>`,
+          dots: false,
+          responsive: [
+            {
+              breakpoint: 1025,
+              settings: {
+                slidesToShow: 2,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 1,
+                arrows: false,
+                infinite: false,
+              },
+            },
+          ],
+          autoplay: true,
+          autoplaySpeed: 1000,
+        });
+      });
+      ///////////////////////////////////
+      
+      $(document).ready(function () {
+        $(".image-slider-1").slick({
+          slidesToShow: 6,
+          slidesToScroll: 1,
+          infinite: true,
+          arrows: true,
+          draggable: false,
+          prevArrow: `<button type='button' class='slick-prev-1 slick-arrow-1'><i class="icofont-arrow-left"></i></button>`,
+          nextArrow: `<button type='button' class='slick-next-1 slick-arrow-1'><i class="icofont-arrow-right"></i></button>`,
+          dots: false,
+          responsive: [
+            {
+              breakpoint: 1025,
+              settings: {
+                slidesToShow: 3,
+              },
+            },
+            {
+              breakpoint: 480,
+              settings: {
+                slidesToShow: 2,
+                arrows: false,
+                infinite: false,
+              },
+            },
+          ],
+          autoplay: true,
+          autoplaySpeed: 1000,
+        });
+      });
+    </script>
+
+    <script>
+      
+
+      let slideIndex = 1;
+      showSlides(slideIndex);
+
+      function plusSlides(n) {
+        showSlides(slideIndex += n);
+      }
+
+      function currentSlide(n) {
+        showSlides(slideIndex = n);
+      }
+
+      function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("mySlides");
+        let dots = document.getElementsByClassName("dot");
+        if (n > slides.length) {slideIndex = 1}    
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+        }
+        for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace("active-dot", "");
+        }
+        slides[slideIndex-1].style.display = "block";  
+        dots[slideIndex-1].className += " active-dot";
+      }
+
+      //js for display element
+      function displayFunction() {
+        var element = document.getElementById("searchform");
+        element.classList.toggle("display");
+      }
+
+      //js for display menu
+      function displayMenu() {
+        var element = document.getElementById("nav-panel");
+        element.classList.toggle("display");
+      }
+    </script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+
+  </body>
+</html>

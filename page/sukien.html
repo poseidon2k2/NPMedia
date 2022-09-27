@@ -1,0 +1,373 @@
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sự kiện</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../font/icofont/icofont.min.css">
+    <link rel="stylesheet" type="text/css" href="../css/animate.css">
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../css/slick.css">   
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  </head>
+  <body>
+    <header>
+      <section id="top-bar">
+        <div class="container">
+          <div class="top-bar">
+            <div class="left_top-bar">
+              <span>IF YOU CAN THINK IT, WE CAN CREATE IT</span>
+            </div>
+            <div class="right_top-bar">
+              <a href="#"><span class="icon-facebook"><i class="icofont-facebook"></i></span></a>
+              <a href="#"><span class="icon-youtube"><i class="icofont-youtube-play"></i></span></a>
+              <a href="#"><span class="icon-instagram"><i class="icofont-instagram"></i></span></a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="header-main" id="header-main">
+        <div class="container">
+          <div class="row header-pc">
+            <div class="col-xl-2 col-md-3 col-3 col">
+              <img src="../img/new-plus-media-logo.png" class="logo">
+            </div>
+            <div class="col-xl-10 col-md-9 col-9 col">
+              <div class="main-menu">
+                <ul id="menu-main-menu" class="main-menu mega-menu">
+                  <li class="menu-item "><a href="../index.html" class=" current"><i class="icofont-home"></i>Trang chủ</a></li>
+                  <li class="menu-item active"><a href="../page/gioithieu.html"><i class="icofont-file-document"></i> Giới thiệu</a></li>
+                  <li class="menu-item"><a href="../page/dichvu.html"><i class="icofont-listine-dots"></i> Dịch vụ</a></li>
+                  <li class="menu-item"><a href="../page/sukien.html"><i class="icofont-newspaper"></i> Sự kiện</a></li>
+                  <li class="menu-item"><a href="../page/lienhe.html"><i class="icofont-phone"></i> Liên hệ</a></li>
+                </ul>
+                <button class="btn-search" onclick="displayFunction()"><i class="icofont-search-2"></i></button>
+                <form action="#" method="get" class="searchform" id="searchform">
+                  <div class="searchform-fields">
+                    <span class="text"><input name="s" type="text" value="" placeholder="Tìm kiếm…" autocomplete="off"></span>
+                      <span class="button-wrap">
+                        <button class="btn btn-special" title="Tìm kiếm" type="submit"><i class="icofont-search-2"></i></button>
+                      </span>
+                  </div>
+                  <div class="live-search-list">
+                    <div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999;"></div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+          <div class="header-not-pc">
+            <div class="logo-respon">
+              <img src="../img/new-plus-media-logo.png" class="logo">
+            </div>
+            <div class="menu-respon">
+              <button class="btn-menu" onclick="displayMenu()"><i class="icofont-navigation-menu"></i></button>
+              <span class="divide"></span>
+              <button class="btn-search" onclick="displayFunction()"><i class="icofont-search-2"></i></button>
+              <form action="#" method="get" class="searchform" id="searchform">
+                  <div class="searchform-fields">
+                    <span class="text"><input name="s" type="text" value="" placeholder="Tìm kiếm…" autocomplete="off"></span>
+                      <span class="button-wrap">
+                        <button class="btn btn-special" title="Tìm kiếm" type="submit"><i class="icofont-search-2"></i></button>
+                      </span>
+                  </div>
+                  <div class="live-search-list">
+                    <div class="autocomplete-suggestions" style="position: absolute; display: none; max-height: 300px; z-index: 9999;"></div>
+                  </div>
+                </form>
+            </div>
+          </div>
+          <div id="nav-panel">
+                <div class="container">
+                  <div class="mobile-nav-wrap">
+                    <div class="menu-wrap">
+                      <ul class="mobile-menu">
+                        <li class="menu-item-mobile"><a href="../index.html" class=" current"><i class="icofont-home"></i>Trang chủ</a></li>
+                        <li class="menu-item-mobile active-mobile"><a href="../page/gioithieu.html/"><i class="icofont-file-document"></i> Giới thiệu</a></li>
+                        <li class="menu-item-mobile"><a href="../page/dichvu.html"><i class="icofont-listine-dots"></i> Dịch vụ</a></li>
+                        <li class="menu-item-mobile"><a href="../page/sukien.html"><i class="icofont-newspaper"></i> Sự kiện</a></li>
+                        <li class="menu-item-mobile"><a href="../page/lienhe.html"><i class="icofont-phone"></i> Liên hệ</a></li>
+                      </ul>
+                    </div>   
+                  </div>
+                </div>
+              </div>
+        </div>
+      </section>
+      <section class="breadcrumb">
+        <div class="container">
+          <div class="breadcrumbs-wrap">
+            <ul>
+              <li><a href="http://tech3.mypagedemo.com/dmsmax"><span itemprop="name">Trang chủ / </span></a><span>Sự kiện</span></li>
+            </ul>        
+          </div>
+        </div>
+      </section>
+    </header>
+    <main class="main-event">
+      <div class="container">
+        <div class="row">
+          <div class="col-xl-9 col-md-7 col-12 col">
+            <div class="wrapper-event-items">
+            <div class="row post-primary">
+              <div class="col-xl-4 col-md-4 col-12 col">
+                <img src="../img/fb-lock-3-2-1024x540-1-463x348.jpeg" class="full-width">
+              </div>
+              <div class="col-xl-8 col-md-8 col-12 col">
+                <div class="post-content">
+                  <h2 class="entry-title"><a href="../page/sukienchitiet.html">4 bước để khắc phục Tài khoản quảng cáo Facebook Ads bị khóa</a></h2>  
+                  <p class="post-excerpt">
+                    Quảng cáo Facebook mang lại nhiều cơ hội mang lại cho bạn nhiều đơn hàng. Nhưng kèm theo đó là không ít các vấn đề rất đau đầu, đặc biệt là nhiều khi bạn&nbsp;không làm gì mà tài khoản cũng bị khóa.
+                    Việc tài khoản ads đang dùng ngon lại&nbsp;lăn...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="post-meta">
+              <div>
+                <span class="meta-date"><i class="icofont-ui-calendar"></i>11/06/2021</span>
+              </div>
+              <div>
+                <a href="../page/sukienchitiet.html">
+                  <button>XEM THÊM...</button>
+                </a>
+              </div>
+            </div>
+            </div>
+          <div class="wrapper-event-items">
+            <div class="row post-primary">
+              <div class="col-xl-4 col-md-4 col-12 col">
+                <img src="../img/Content_quảng_cáo_Facebook_như_thế_nào_là_hiệu_quả-2-1024x539-1-463x348.jpeg" class="full-width">
+              </div>
+              <div class="col-xl-8 col-md-8 col-12 col">
+                <div class="post-content">
+                  <h2 class="entry-title"><a href="../page/sukienchitiet.html">Làm như thế nào để có Content quảng cáo Facebook hiệu quả? Ví dụ & Lời khuyên</a></h2>  
+                  <p class="post-excerpt">
+                    Đa phần những người mới tiếp cận với quảng cáo Facebook để bán hàng thường gặp phải rất nhiều vấn đề và không biết làm thế nào để chạy quảng cáo hiệu quả.
+                    Không ít người phải gồng lỗ mỗi ngày với hy vọng vào ngày mai Mark sẽ tối...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="post-meta">
+              <div>
+                <span class="meta-date"><i class="icofont-ui-calendar"></i>11/06/2021 </span>
+              </div>
+              <div>
+                <a href="../page/sukienchitiet.html">
+                  <button>XEM THÊM...</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper-event-items">
+            <div class="row post-primary">
+              <div class="col-xl-4 col-md-4 col-12 col">
+                <img src="../img/35888218_1732274600161202_3324715977467232256_n-463x348.jpeg" class="full-width">
+              </div>
+              <div class="col-xl-8 col-md-8 col-12 col">
+                <div class="post-content">
+                  <h2 class="entry-title"><a href="../page/sukienchitiet.html">Sự kiện “Digital Trade-Chiến lược Digital Marketing để bán hàng thành công”</a></h2>  
+                  <p class="post-excerpt">
+                    Trong thời đại công nghệ hóa như hiện nay, ta bất chợt nhận ra rằng cuộc sống luôn gắn liền với thứ được gọi là “lướt web”, bạn có thể làm bất cứ thứ gì chỉ với môt thao tác click chuột, một thông tin bất kỳ sẽ được...
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="post-meta">
+              <div>
+                <span class="meta-date"><i class="icofont-ui-calendar"></i>11/06/2021</span>
+              </div>
+              <div>
+                <a href="../page/sukienchitiet.html">
+                  <button>XEM THÊM...</button>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="wrapper-event-items">
+            <div class="row post-primary">
+                <div class="col-xl-4 col-md-4 col-12 col">
+                  <img src="../img/IMG_6506_resize-463x348.jpeg" class="full-width">
+                </div>
+                <div class="col-xl-8 col-md-8 col-12 col">
+                  <div class="post-content">
+                    <h2 class="entry-title"><a href="../page/sukienchitiet.html">Sự kiện “Hội tụ đỉnh cao- Vươn đến thành công”</a></h2>  
+                    <p class="post-excerpt">
+                      NP Media đã phối hợp Mỹ phẩm LAKIA đã tổ chức thành công hội thảo đào tạo marketing với chủ đề “Hội tụ đỉnh cao – Vươn đến thành công”.
+                      Hội thảo đã cung cấp những kiến thức, kinh nghiệm bán hàng, kỹ năng marketing đến toàn bộ hệ thống...
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="post-meta">
+                <div>
+                  <span class="meta-date"><i class="icofont-ui-calendar"></i>11/06/2021</span>
+                </div>
+                <div>
+                  <a href="../page/sukienchitiet.html">
+                    <button>XEM THÊM...</button>
+                  </a>
+                </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div class="col-xl-3 col-md-5 col-12 col">
+          <div class="side-bar">
+            <h3 class="widget-title">Bài viết mới</h3>
+            <ul>
+              <li>
+                <a href="http://tech3.mypagedemo.com/dmsmax/2021/06/11/4-buoc-de-khac-phuc-tai-khoan-quang-cao-facebook-ads-bi-khoa/"><i class="icofont-arrow-right"></i>4 bước để khắc phục Tài khoản quảng cáo Facebook Ads bị khóa</a>
+              </li>
+              <li>
+                <a href="http://tech3.mypagedemo.com/dmsmax/2021/06/11/lam-nhu-the-nao-de-co-content-quang-cao-facebook-hieu-qua-vi-du-loi-khuyen/"><i class="icofont-arrow-right"></i>Làm như thế nào để có Content quảng cáo Facebook hiệu quả? Ví dụ &amp; Lời khuyên</a>
+              </li>
+              <li>
+                <a href="http://tech3.mypagedemo.com/dmsmax/2021/06/11/su-kien-digital-trade-chien-luoc-digital-marketing-de-ban-hang-thanh-cong/"><i class="icofont-arrow-right"></i>Sự kiện “Digital Trade-Chiến lược Digital Marketing để bán hàng thành công”</a>
+              </li>
+              <li>
+                <a href="http://tech3.mypagedemo.com/dmsmax/2021/06/11/su-kien-hoi-tu-dinh-cao-vuon-den-thanh-cong/"><i class="icofont-arrow-right"></i>Sự kiện “Hội tụ đỉnh cao- Vươn đến thành công”</a>
+              </li>
+          </ul>
+        </div>
+        </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <section class="form-contact">
+        <div class="container">
+          <h2 class="vc_custom_heading pos-relative">LIÊN HỆ CHÚNG TÔI</h2>
+          <div class="row">
+            <div class="col-xl-3 col-md-12 col-12 col">
+              
+            </div>
+            <div class="col-xl-6 col-md-12 col-12 col">
+              <p class="sub-text">Đừng ngại liên hệ ngay với NP Media hôm nay để nhận giải pháp&nbsp;giúp doanh nghiệp bạn&nbsp;gia tăng lợi nhuận trong thế giới Digital đang bùng nổ mỗi ngày.</p>
+              <form action="#">
+                <input type="text" name="name" placeholder="Tên(*)" required="" class="form-items">
+                <input type="email" name="Email" placeholder="Email(*)" required="" class="form-items">
+                <input type="phone" name="phone" placeholder="Điện thoại(*)" required="" class="form-items">
+                <textarea name="your-message" cols="40" rows="4"  class="form-items" id="contact-message" aria-invalid="false" placeholder="Nội dung"></textarea>
+                <div class="submit-element">
+                  <input type="submit" value="Gửi ngay" class="btn-submit">  
+                </div>
+              </form>
+            </div>
+            <div class="col-xl-3 col-md-12 col-12 col">
+              
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="main-footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-xl-3 col-md-6 col-12 col">
+              <h3 class="widget-title">GIỚI THIỆU</h3>
+              <div class="textwidget"><p>NP Media là công ty cung cấp các giải pháp về công nghệ, thiết kế Website, tư vấn chiến lược marketing,&nbsp;sáng tạo nội dung, SEO và quảng cáo Google, Facebook, Youtube…</p>
+              </div>
+              <div class="share-links">
+                <span><a href=""><i class="icofont-facebook icon-share"></i></a></span>
+                <span><a href=""><i class="icofont-twitter icon-share"></i></a></span>
+                <span><a href=""><i class="icofont-youtube-play icon-share"></i></a></span>
+                <span><a href=""><i class="icofont-instagram icon-share"></i></a></span>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-12 col">
+              <h3 class="widget-title">TIN Mới NHẤT</h3>
+              <div class="post-slide">
+                <div class="post-item-small">
+                  <a href="../page/sukienchitiet.html">4 bước để khắc phục Tài khoản quảng cáo Facebook Ads bị khóa</a>
+                  <span class="post-date">11/06/2021</span>
+                </div>
+                <div class="post-item-small">
+                  <a href="../page/sukienchitiet.html">Làm như thế nào để có Content quảng cáo Facebook hiệu quả? Ví dụ &amp; Lời khuyên</a>
+                  <span class="post-date">11/06/2021</span>
+                </div>
+                <div class="post-item-small">
+                  <a href="../page/sukienchitiet.html">Sự kiện “Digital Trade-Chiến lược Digital Marketing để bán hàng thành công”</a>
+                  <span class="post-date">11/06/2021</span>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-12 col">
+              <h3 class="widget-title">DỊCH VỤ NỔI BẬT</h3>
+              <div class="menu-menu-footer-container">
+                <ul id="menu-menu-footer" class="menu">
+                  <li id="menu-item-111" class="menu-item-footer"><a href="http://tech3.mypagedemo.com/dmsmax/quang-cao-mang-xa-hoi/"><i class="icofont-arrow-right"></i>Quảng cáo mạng xã hội</a></li>
+                  <li id="menu-item-112" class="menu-item-footer"><a href="http://tech3.mypagedemo.com/dmsmax/thiet-ke-thuong-hieu/"><i class="icofont-arrow-right"></i>Thiết kế thương hiệu</a></li>
+                  <li id="menu-item-113" class="menu-item-footer"><a href="http://tech3.mypagedemo.com/dmsmax/phat-trien-ung-dung/"><i class="icofont-arrow-right"></i>Phát triển ứng dụng</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-xl-3 col-md-6 col-12 col">
+              <h3 class="widget-title">LIÊN HỆ</h3>
+              <div class="textwidget">
+                <ul>
+                  <li><i class="icofont-phone"></i> 0844 15 2020</li>
+                  <li><i class="icofont-phone"></i> Hotline: 0913 898 286</li>
+                  <li><i class="icofont-email"></i><a href="mailto:info@npm.vn"> info@npm.vn</a></li>
+                  <li><i class="icofont-google-map"></i> 165 Trương Định, Phường 9, Quận 3, TP.HCM</li>
+                  <li><i class="icofont-web"></i> <a href="https://npm.vn/"> www.npm.vn</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="footer-bottom">
+        <div class="container">
+          <div class="footer-left">
+            <span class="footer-copyright">© Copyright 2021 by dmsmax. </span>      
+            <span class="designby"><a href="https://www.mypage.vn" onclick="window.open(this.href); return false;">Thiết kế web</a> bởi MyPage</span>
+          </div>
+        </div>
+      </section>
+    </footer>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script>
+    // When the user scrolls the page, execute myFunction
+    window.onscroll = function() {myFunction()};
+
+    // Get the header
+    var header = document.getElementById("header-main");
+
+    // Get the offset position of the navbar
+    var sticky = header.offsetTop;
+
+    // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        header.classList.add("sticky");
+      } else {
+        header.classList.remove("sticky");
+      }
+    }
+    </script>
+
+    <script>
+      //js for display element
+      function displayFunction() {
+        var element = document.getElementById("searchform");
+        element.classList.toggle("display");
+      }
+
+      //js for display menu
+      function displayMenu() {
+        var element = document.getElementById("nav-panel");
+        element.classList.toggle("display");
+      }
+    </script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script>new WOW().init();</script>
+
+  </body>
+</html>
